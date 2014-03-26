@@ -1,6 +1,6 @@
 module Resque
   module Failure
-    class RollBar < Base
+    class Rollbar < Base
       def save
         ::Rollbar.report_exception(exception, payload, nil, :critical)
       end

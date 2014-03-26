@@ -1,5 +1,5 @@
 require "resque-rollbar/version"
-require "resque/failure/roll_bar"
+require "resque/failure/rollbar"
 
 Resque.before_first_fork do
   # Force synchronous reporting
